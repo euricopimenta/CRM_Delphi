@@ -1,0 +1,10 @@
+﻿[pnl_Forms]
+Coordinates=75,10,75,58
+
+[]
+Coordinates=225,10,135,58
+Visible=True
+
+[imgList_BtnEffects]
+Coordinates=188,173,77,36
+
