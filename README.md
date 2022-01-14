@@ -3,7 +3,7 @@
 ✔&nbsp;Cadastro de Contatos </br>
 ✔&nbsp;Busca CEP : API REST_Request JSON</br>
 ✔&nbsp;Gera arquivo XML com os dados informados</br>
-✔&nbsp;&nbsp;Envio de email com XML em anexo</br>
+✔&nbsp;Envio de email com XML em anexo</br>
 ⏳&nbsp;&nbsp;Email com dados Formatados em HTML</br>
 
 
