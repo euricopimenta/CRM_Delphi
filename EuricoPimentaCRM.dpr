@@ -11,7 +11,7 @@ uses
   CRM.Model.XML in 'Model\CRM.Model.XML.pas',
   CRM.Model.Pessoa in 'Model\CRM.Model.Pessoa.pas',
   CRM.Model.Endereco in 'Model\CRM.Model.Endereco.pas',
-  Unit1 in 'Unit1.pas' {Form1};
+  CRM.Controller.EnviaEmail in 'Controller\CRM.Controller.EnviaEmail.pas' {frmEnviaEmail};
 
 {$R *.res}
 
@@ -20,6 +20,5 @@ begin
   Application.MainFormOnTaskbar := True;
   TStyleManager.TrySetStyle('Smokey Quartz Kamri');
   Application.CreateForm(Tfrm_MainMenu, frm_MainMenu);
-  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.

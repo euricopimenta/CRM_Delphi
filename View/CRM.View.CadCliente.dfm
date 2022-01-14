@@ -1,8 +1,8 @@
 object frm_CadCliente: Tfrm_CadCliente
   Left = 0
   Top = 0
-  Width = 790
-  Height = 561
+  Width = 451
+  Height = 305
   Hint = 'Cadastro de Usu'#225'rios'
   Align = alClient
   Color = 15921906
@@ -15,8 +15,6 @@ object frm_CadCliente: Tfrm_CadCliente
   ParentColor = False
   ParentFont = False
   TabOrder = 0
-  ExplicitWidth = 451
-  ExplicitHeight = 305
   object Image1: TImage
     Left = 3
     Top = 3
@@ -11068,8 +11066,8 @@ object frm_CadCliente: Tfrm_CadCliente
     AlignWithMargins = True
     Left = 30
     Top = 15
-    Width = 755
-    Height = 531
+    Width = 416
+    Height = 275
     Margins.Left = 30
     Margins.Top = 15
     Margins.Right = 5
@@ -11089,13 +11087,11 @@ object frm_CadCliente: Tfrm_CadCliente
     ParentFont = False
     TabOrder = 0
     StyleElements = []
-    ExplicitWidth = 416
-    ExplicitHeight = 275
     object pnl_DadosEndereco: TPanel
       AlignWithMargins = True
       Left = 3
       Top = 135
-      Width = 749
+      Width = 410
       Height = 218
       Margins.Top = 15
       Align = alTop
@@ -11104,7 +11100,6 @@ object frm_CadCliente: Tfrm_CadCliente
       ShowCaption = False
       TabOrder = 0
       StyleElements = []
-      ExplicitWidth = 410
       object pnl_CEP: TPanel
         AlignWithMargins = True
         Left = 6
@@ -11617,7 +11612,7 @@ object frm_CadCliente: Tfrm_CadCliente
       AlignWithMargins = True
       Left = 3
       Top = 3
-      Width = 749
+      Width = 410
       Height = 114
       Align = alTop
       Color = clWhite
@@ -11628,7 +11623,6 @@ object frm_CadCliente: Tfrm_CadCliente
       ShowCaption = False
       TabOrder = 1
       StyleElements = []
-      ExplicitWidth = 410
       object pnl_UserName: TPanel
         AlignWithMargins = True
         Left = 6
@@ -11854,6 +11848,7 @@ object frm_CadCliente: Tfrm_CadCliente
           Align = alClient
           AutoSize = False
           BorderStyle = bsNone
+          CharCase = ecLowerCase
           Color = 15921906
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -11931,8 +11926,8 @@ object frm_CadCliente: Tfrm_CadCliente
     object Panel8: TPanel
       AlignWithMargins = True
       Left = 3
-      Top = 447
-      Width = 749
+      Top = 191
+      Width = 410
       Height = 81
       Align = alBottom
       Color = clWhite
@@ -11943,8 +11938,6 @@ object frm_CadCliente: Tfrm_CadCliente
       ShowCaption = False
       TabOrder = 2
       StyleElements = []
-      ExplicitTop = 191
-      ExplicitWidth = 410
       object lbl_emailDestino: TLabel
         Left = 9
         Top = 8
@@ -11991,7 +11984,7 @@ object frm_CadCliente: Tfrm_CadCliente
           ExplicitWidth = 388
           ExplicitHeight = 41
         end
-        object Edit11: TEdit
+        object edt_Destinatario: TEdit
           AlignWithMargins = True
           Left = 15
           Top = 5
@@ -12005,6 +11998,7 @@ object frm_CadCliente: Tfrm_CadCliente
           Align = alClient
           AutoSize = False
           BorderStyle = bsNone
+          CharCase = ecLowerCase
           Color = 15921906
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText

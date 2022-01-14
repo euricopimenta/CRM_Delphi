@@ -118,8 +118,8 @@
         <DCCReference Include="Model\CRM.Model.XML.pas"/>
         <DCCReference Include="Model\CRM.Model.Pessoa.pas"/>
         <DCCReference Include="Model\CRM.Model.Endereco.pas"/>
-        <DCCReference Include="Unit1.pas">
-            <Form>Form1</Form>
+        <DCCReference Include="Controller\CRM.Controller.EnviaEmail.pas">
+            <Form>frmEnviaEmail</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

@@ -55,7 +55,7 @@ type
     Panel8: TPanel;
     Panel12: TPanel;
     Shape11: TShape;
-    Edit11: TEdit;
+    edt_Destinatario: TEdit;
     btn_enviarEmail: TButton;
     lbl_emailDestino: TLabel;
     btn_BuscaCep: TButton;
@@ -73,7 +73,7 @@ implementation
 
 Uses
   CRM.Controller.Endereco,
-  CRM.Model.XML,
+  CRM.Controller.EnviaEmail,
   CRM.Model.Pessoa;
 
 procedure Tfrm_CadCliente.btn_BuscaCepClick(Sender: TObject);
@@ -84,10 +84,11 @@ end;
 procedure Tfrm_CadCliente.btn_enviarEmailClick(Sender: TObject);
 Var
   Pessoa : TPessoa;
-  XML : TCriaXML;
+  Email : TfrmEnviaEmail;
+
 begin
+  Email := TfrmEnviaEmail.Create(Self);
   Pessoa := TPessoa.Create;
-  XML := TCriaXML.Create;
 
   Try
     With Pessoa do
@@ -114,10 +115,14 @@ begin
     End;
   Finally
    Try
-     XML.GerarArquivo(Pessoa);
+    btn_enviarEmail.Enabled := False;
+    Email.EnviaEmail(Pessoa,edt_Destinatario.Text);
+    btn_enviarEmail.Enabled := True;
+
    Finally
-     Pessoa.Free;
-     XML.Free;
+    Pessoa.Free;
+    Email.Free;
+
    End;
   End;
 
